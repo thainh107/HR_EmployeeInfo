@@ -31,7 +31,7 @@ namespace HR_EmployeeInfo.Controllers
                       + ", rtrim(dbo.vService.Employee_Position) Employee_Position, rtrim(dbo.vService.Employee_Category) Employee_Category, rtrim(dbo.vService.Employee_Division) Employee_Division"
                       + ", rtrim(dbo.vService.Employee_Department) Employee_Department, rtrim(dbo.vEmployee.Employee_Email) Employee_Email, rtrim(dbo.vAddress.Employee_Mobile) as Employee_Mobile"
                       + ", rtrim(dbo.vService.Employee_Branch) Employee_Branch "
-                    + "from dbo.vEmployee"
+                    + "from dbo.vEmployee "
                      + " left join dbo.vService on dbo.vEmployee.Employee_No = dbo.vService.Employee_No"
                      + " left join dbo.vAddress on dbo.vEmployee.Employee_No = dbo.vAddress.Employee_No"
                     + " where dbo.vService.Employee_Branch = 'HQ    '";
